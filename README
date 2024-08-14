@@ -1,0 +1,6 @@
+
+docker run -d --name mysql --network mynetwork -p 3306:3306 mydatabase
+
+docker run -d --name backend --network mynetwork -p 5001:5000 backend
+
+docker run -d --name frontend --network mynetwork -p 3000:3000 frontend
